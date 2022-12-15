@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Лабораторная работа №3</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <header style="text-align: center;">
+            <h1>Лабораторная работа №3</h1>
+            <h3>Вариант №2<br>
+                Выполнил студент группы КИУКИ-20-3<br>
+                Свистельник Даниил</h3>
+        </header>
+        <div style="position: absolute;">
+            <div style="position: relative; top:-10px; left:10px; max-width: 20%;">
+                <input type="button" value="UP" class="up" onclick=moveup()>
+                <input type="button" value="DOWN" class="down" onclick=movedown()><br>
+                <input type="number" class="form" placeholder="Ширина" value="200" min=1>
+                <input type="number" class="form" placeholder="Высота" value="200" min=1>
+                <input type="number" class="form" placeholder="Обводка" value="0" min=0>
+                <input type="text" class="form" placeholder="Альтернативный текст">
+                <input type="button" value="Confirm" onclick=setResolImg()>
+            </div>
+            <div>
+                <img src="img1.jpg" class="image" onclick=choosemove(0) style="height: 200px;width: 200px">
+            </div>
+            <div>
+                <img src="img2.jpg" class="image" onclick=choosemove(1) style="height: 200px;width: 200px">
+            </div>
+            <div>
+                <img src="img3.jpg" class="image" onclick=choosemove(2) style="height: 200px;width: 200px">
+            </div>
+        </div>
+        <script src="script.js">
+        </script>
+    </body>
+</html>
